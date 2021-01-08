@@ -19,11 +19,10 @@ namespace AdventOfCode.Event2019
                         Print("Noun", i, true);
                         Print("Verb", j, true);
                         Print("Resulting number", 100 * i + j, true);
-                        goto end;
+                        return;
                     }
                 }
             }
-        end:;
         }
 
         private static long Calculate(string[] lines, long noun, long verb)
